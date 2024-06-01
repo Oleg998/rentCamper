@@ -1,0 +1,1 @@
+export const getAllContact = store => store.campers;
