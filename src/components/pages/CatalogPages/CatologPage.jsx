@@ -1,11 +1,15 @@
 import css from "./catalog-page.module.css"
 import CatalogCampers from "../../../components/CatalogCampers/CatalogCampers"
+import FilterCampers from "../../../components/FilterCampers/FilterCampers"
 
 const CatalogPage= ()=>{
     return (
-        <div>
-        <h1 className={css.titel}>Catalog Page</h1>
-        <CatalogCampers/>
+        <div className={css.catalog_wraper}>
+       
+        <FilterCampers/>
+        <div className={css.filter_wrraper}><CatalogCampers/></div>
+        
+        
         </div>
     )
 }

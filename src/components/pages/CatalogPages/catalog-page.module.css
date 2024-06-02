@@ -1,3 +1,5 @@
-.titel {
-    color :blue
+.catalog_wraper {
+    display: flex;
+    width: 1314px;
+    
 }
