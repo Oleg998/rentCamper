@@ -1,1 +1,1 @@
-export const getAllContact = store => store.campers;
+export const getAllCampers = store => store.campers.items;
