@@ -8,7 +8,7 @@ const initialState={
 }
 
 const campersSlice=createSlice({
-    name:"camper",
+    name:"campers",
     initialState,
     reducers:{
         fetchCampersLoading:(state)=>{

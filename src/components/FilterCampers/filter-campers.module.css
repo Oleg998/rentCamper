@@ -20,7 +20,7 @@
     text-align: center;   
      border: 1px solid rgba(16, 24, 40, 0.2);
      border-radius: 10px;
-     width: calc((100% - 20px) / 3);
+     width: calc((100% - 26px) / 3);
      height: 95px;
   }
 

@@ -5,9 +5,9 @@ import FilterCampers from "../../../components/FilterCampers/FilterCampers"
 const CatalogPage= ()=>{
     return (
         <div className={css.catalog_wraper}>
-       
-        <FilterCampers/>
-        <div className={css.filter_wrraper}><CatalogCampers/></div>
+         <div className={css.filter_containet}><FilterCampers/></div>
+        
+        <div className={css.catalog_containet}><CatalogCampers/></div>
         
         
         </div>

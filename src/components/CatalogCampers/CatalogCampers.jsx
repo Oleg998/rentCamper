@@ -3,7 +3,7 @@ import css from './catalog-campers.module.css';
 import { fetchCars } from '../../redux/camper/campers-operations';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
-import { getAllCampers } from '../../redux/camper/campers-selector';
+import { getAllCampers , selectFilterCampers } from '../../redux/camper/campers-selector';
 import sprite from '../../helpers/img/symbol-defs.svg';
 import { capitalizeFirstLetter } from '../../helpers/ToUpFistCase';
 
@@ -12,7 +12,7 @@ const CatalogCampers = () => {
   useEffect(() => {
     dispatch(fetchCars());
   }, [dispatch]);
-  const items = useSelector(getAllCampers);
+  const items = useSelector(selectFilterCampers);
 
   const elements = items.map(
     ({
