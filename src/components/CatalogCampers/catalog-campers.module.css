@@ -13,7 +13,7 @@
   padding: 24px;
 }
 .item_container_info {
-  width: 526px;
+  width: 525px;
   margin-left: 24px;
 }
 
@@ -25,7 +25,9 @@
   height: 310px;
 }
 
-
+.showMore_btn{
+  margin-top: 24px;
+}
 
 .name_price {
   display: flex;

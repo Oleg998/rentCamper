@@ -1,0 +1,24 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 173px;
+  white-space: nowrap;
+  border-radius: 200px;
+  padding: 16px 60px;
+  text-align: center;
+  background-color: #e44848;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: #fff;
+
+  transition: background-color 250ms ease-in 0s;
+}
+.btn:focus,
+.btn:hover {
+  background-color: #d84343;
+}

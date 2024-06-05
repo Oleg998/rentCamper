@@ -1,11 +1,14 @@
 .catalog_wraper {
     display: flex;
     width: 1314px;
+    flex-direction: row;
+    justify-content:space-between;
     
 }
 
 .filter_containet{
 width: 360px;
+margin-right: 64px;
 }
 .catalog_containet{
 width: 888px;

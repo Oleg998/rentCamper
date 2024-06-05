@@ -1,0 +1,53 @@
+.location_contaiter{
+    margin-bottom: 32px;
+    position: relative;
+}
+.location_titel{
+
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+color: rgba(16, 24, 40, 0.6);
+margin-bottom: 8px;
+}
+
+.item_svg {
+    left: 18px;
+    top: 50%;
+    position: absolute;
+    width: 18px;
+    height: 20px;
+}
+.item_use_local{
+    
+    fill:transparent;
+    stroke: rgba(16, 24, 40, 0.6);
+}
+
+.input{
+border: transparent;
+border-radius: 10px;
+width: 298px;
+
+padding: 18px 18px 18px 44px;
+background-color: #f7f7f7;
+font-weight: 400;
+font-size: 16px;
+line-height: 125%;
+color: #101828;
+}
+
+.input:focus {
+   
+    outline: none;
+  }
+  .input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    color: rgba(16, 24, 40, 0.6);
+  }
+
+  input:focus + svg use{
+    stroke: black;
+  }

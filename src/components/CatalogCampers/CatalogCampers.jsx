@@ -2,12 +2,16 @@ import { useSelector } from 'react-redux';
 import css from './catalog-campers.module.css';
 import { fetchCars } from '../../redux/camper/campers-operations';
 import { useDispatch } from 'react-redux';
-import { useEffect } from 'react';
-import { getAllCampers , selectFilterCampers } from '../../redux/camper/campers-selector';
+import { useEffect , useState} from 'react';
+import { selectFilterCampers } from '../../redux/camper/campers-selector';
 import sprite from '../../helpers/img/symbol-defs.svg';
 import { capitalizeFirstLetter } from '../../helpers/ToUpFistCase';
+import FormBtn from "../FormBtn/FormBtn";
+import Modal from "../Modal/Modal"
+import ModalWindows from '../ModalWindow/ModalWindow';
 
 const CatalogCampers = () => {
+  const [modalActive, setModalActive] = useState(false);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchCars());
@@ -37,7 +41,7 @@ const CatalogCampers = () => {
             <div className={css.name_price}>
               <h2>{name}</h2>
               <h2>
-                &#8364;{price}{' '}
+                &#8364;{price}
                 <svg className={css.item_svg_favorit}>
                   <use
                     className={css.item_use_favorit}
@@ -144,7 +148,9 @@ const CatalogCampers = () => {
               </li>) : <></>}
               
             </ul>
+            <div className={css.showMore_btn } onClick={() => setModalActive(true)} ><FormBtn textBtn={"Show more"}/></div>
           </div>
+          
         </li>
       );
     }
@@ -152,8 +158,13 @@ const CatalogCampers = () => {
 
   return (
     <div className={css.item_container}>
+          <Modal isOpen={modalActive} onClose={setModalActive}  >
+           <ModalWindows item={items}/>
+          </Modal>
       <ul>{elements}</ul>
+     
     </div>
+
   );
 };
 
