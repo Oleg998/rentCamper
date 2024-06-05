@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/rozetkaChetbox/static/css/main.bb3835ce.css",
-    "main.js": "/rozetkaChetbox/static/js/main.ec51d44a.js",
-    "static/media/symbol-defs.svg": "/rozetkaChetbox/static/media/symbol-defs.f6734c619d7bbd22d7ce56f09c7f77d2.svg",
+    "main.css": "/rozetkaChetbox/static/css/main.59e71c2f.css",
+    "main.js": "/rozetkaChetbox/static/js/main.b614ae80.js",
+    "static/media/symbol-defs.svg": "/rozetkaChetbox/static/media/symbol-defs.af6597062fe7b1e66a52df106832a55d.svg",
     "index.html": "/rozetkaChetbox/index.html",
-    "main.bb3835ce.css.map": "/rozetkaChetbox/static/css/main.bb3835ce.css.map",
-    "main.ec51d44a.js.map": "/rozetkaChetbox/static/js/main.ec51d44a.js.map"
+    "main.59e71c2f.css.map": "/rozetkaChetbox/static/css/main.59e71c2f.css.map",
+    "main.b614ae80.js.map": "/rozetkaChetbox/static/js/main.b614ae80.js.map"
   },
   "entrypoints": [
-    "static/css/main.bb3835ce.css",
-    "static/js/main.ec51d44a.js"
+    "static/css/main.59e71c2f.css",
+    "static/js/main.b614ae80.js"
   ]
 }
