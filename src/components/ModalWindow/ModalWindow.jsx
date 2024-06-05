@@ -61,7 +61,7 @@ const ModalWindows = ({ currentItem }) => {
       </div>
       <div className={style.componentContainer}>
         {activeComponent === 'Features' && <FeaturesComponent features={currentItem} />}
-        {activeComponent === 'Reviews' && <ReviewsComponent reviews={currentItem} />}
+        {activeComponent === 'Reviews' && <ReviewsComponent reviews={currentItem.reviews} />}
       </div>
     </div>
   );
