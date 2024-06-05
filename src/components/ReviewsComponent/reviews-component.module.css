@@ -1,0 +1,9 @@
+.wrraper {
+    display: flex;
+    margin-top: 68px;
+    justify-content: space-between;
+}
+
+.review_container{
+    width: 430px;
+}
