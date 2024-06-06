@@ -156,6 +156,51 @@ const FeaturesComponent = ({ features }) => {
             ) : (
               <></>
             )}
+            {features.details.water ? (
+              <li className={css.item_details}>
+                <span className={css.span_icons}>
+                  <svg className={css.icon_svg}>
+                    <use
+                      className={css.icon_use_1}
+                      href={`${sprite}#icon-water`}
+                    ></use>
+                  </svg>
+                  
+                </span>
+              </li>
+            ) : (
+              <></>
+            )}
+             {features.details.gas ? (
+              <li className={css.item_details}>
+                <span className={css.span_icons}>
+                  <svg className={css.icon_svg}>
+                    <use
+                      className={css.icon_use_1}
+                      href={`${sprite}#icon-gas`}
+                    ></use>
+                  </svg>
+                  
+                </span>
+              </li>
+            ) : (
+              <></>
+            )}
+                   {features.details.toilet ? (
+              <li className={css.item_details}>
+                <span className={css.span_icons}>
+                  <svg className={css.icon_svg}>
+                    <use
+                      className={css.icon_use_1}
+                      href={`${sprite}#icon-toilet`}
+                    ></use>
+                  </svg>
+                  
+                </span>
+              </li>
+            ) : (
+              <></>
+            )}
           </ul>
         </div>
         <h3 className={style.features_titel}>Vehicle details</h3>
