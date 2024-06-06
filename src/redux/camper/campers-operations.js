@@ -1,20 +1,14 @@
+import * as campersApi from '../../api/campers-api';
+import { createAsyncThunk } from '@reduxjs/toolkit';
 
-import * as campersApi from "../../api/campers-api"
-
-import {fetchCampersLoading, fetchCampersSuccess,fetchCampersError} from "./campers-slice"
-
-
-export const fetchCars=()=>{
-    const func = async (dispatch)=>{
+export const fetchCars=createAsyncThunk(
+    "campers/fetchAll", async(_,thunkApi)=>{
         try {
-            dispatch(fetchCampersLoading())
-            const data = await campersApi.requestCampers()
-            dispatch (fetchCampersSuccess(data))
+         const data=await campersApi.requestCampers()
+         return data;
         }
         catch(error){
-            dispatch (fetchCampersError(error.massager))
-
+            return thunkApi.rejectWithValue(error.massage);
         }
     }
-    return func
-}
+)

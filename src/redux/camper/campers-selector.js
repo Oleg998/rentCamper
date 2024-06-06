@@ -25,7 +25,7 @@ export const selectFilterCampers = createSelector(
       result = result.filter(camper => camper.transmission ==="automatic");
     }
    
-  // Фильтрация по типу
+
   if (filter.details.type.length > 0) {
     result = result.filter(camper =>
       filter.details.type.includes(camper.form)
