@@ -3,6 +3,8 @@ import {selectFilter} from '../filter/filter-selectors';
 
 export const getAllCampers = store => store.campers.items;
 
+export const selectFavorites = (state) => state.favorites;
+
 export const selectFilterCampers = createSelector(
   [getAllCampers, selectFilter],
   (campers, filter) => {

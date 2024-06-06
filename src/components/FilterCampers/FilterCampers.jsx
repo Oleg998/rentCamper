@@ -4,7 +4,7 @@ import css from "./filter-campers.module.css"
 import {useDispatch } from 'react-redux';
 import LocationFilter from "../Locationfilter/LocatinFilter"
 import { setDetails } from '../../redux/filter/filer-slice';
-import FormBtn from "../FormBtn/FormBtn";
+import {FormBtn} from "../FormBtn/FormBtn";
 const FilterCampers = () => {
   const INITIAL_STATE = {
     equipment: [],
@@ -14,14 +14,14 @@ const FilterCampers = () => {
 
   const [state, setState] = useState({ ...INITIAL_STATE });
   const dispatch = useDispatch(); 
-
+  
 
   const vehicleEquipmentList = [
-    { id: 'airConditioner', name: 'AC', icon: 'icon-wind' , inpudName:"equipment"},
-    { id: 'automatic', name: 'Automatic', icon: 'icon-automatic', inpudName:"transmission"},
-    { id: 'kitchen', name: 'Kitchen', icon: 'icon-kitchen',inpudName:"equipment" },
-    { id: 'TV', name: 'TV', icon: 'icon-tv',inpudName:"equipment" },
-    { id: 'shower', name: 'Shower/WC', icon: 'icon-shower' ,inpudName:"equipment"},
+    { id: 'airConditioner', name: 'AC', icon: 'icon-wind' , inputName:"equipment"},
+    { id: 'automatic', name: 'Automatic', icon: 'icon-automatic', inputName:"transmission"},
+    { id: 'kitchen', name: 'Kitchen', icon: 'icon-kitchen',inputName:"equipment" },
+    { id: 'TV', name: 'TV', icon: 'icon-tv',inputName:"equipment" },
+    { id: 'shower', name: 'Shower/WC', icon: 'icon-shower' ,inputName:"equipment"},
   ];
 
   const typeVen = [
@@ -31,36 +31,40 @@ const FilterCampers = () => {
 
   ]
   
+
   const handleChange = ({ target }) => {
-    const { name, value, checked } = target;
+    const { name, value, checked, type } = target;
 
     setState(prevState => {
-        if (name === 'equipment') {
-            const updatedEquipment = checked
-                ? [...prevState.equipment, value]
-                : prevState.equipment.filter(item => item !== value);
-
-            return { ...prevState, equipment: updatedEquipment };
-        } else {
-            return { ...prevState, [name]: value };
-        }
+      if (type === 'checkbox') {
+        const updatedEquipment = checked
+          ? [...prevState.equipment, value]
+          : prevState.equipment.filter(item => item !== value);
+        return { ...prevState, equipment: updatedEquipment };
+      } else if (type === 'radio') {
+        return { ...prevState, [name]: value };
+      } else {
+        return { ...prevState, [name]: value };
+      }
     });
-};
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(setDetails(state));
+    setState({...INITIAL_STATE})
   };
 
-  const elementsEquipment = vehicleEquipmentList.map(({ id, name, icon ,inpudName}) => (
+  const elementsEquipment = vehicleEquipmentList.map(({ id, name, icon ,inputName}) => (
     <label key={id} htmlFor={id} className={css.elementsEquipment_label}>
       <input
-        id={id}
-        name={inpudName}
-        type="checkbox"
-        value={id}
-        onChange={handleChange}
-        className={css.radio_input}
+         id={id}
+         name={inputName}
+         type="checkbox"
+         value={id}
+         checked={state.equipment.includes(id)}
+         onChange={handleChange}
+         className={css.radio_input}
       />
       <svg className={css.elementsEquipment_svg}>
         <use href={`${IconsSprite}#${icon}`} />
@@ -72,12 +76,13 @@ const FilterCampers = () => {
   const elementsVen= typeVen.map(({ id, name, icon }) => (
     <label key={id} htmlFor={id} className={css.elementsEquipment_label}>
       <input
-        id={id}
-        name="type"
-        type="radio"
-        value={id}
-        onChange={handleChange}
-        className={css.radio_input}
+       id={id}
+       name="type"
+       type="radio"
+       value={id}
+       checked={state.type === id}
+       onChange={handleChange}
+       className={css.radio_input}
       />
       <svg className={css.elementsEquipment_svg}>
         <use href={`${IconsSprite}#${icon}`} />

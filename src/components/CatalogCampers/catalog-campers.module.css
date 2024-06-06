@@ -1,7 +1,7 @@
 .item_container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content:center;
  
 }
 .item {
@@ -63,6 +63,10 @@
   stroke: black;
   stroke-width:2.30px;
 }
+.item_use_favorit_active {
+  fill:red;
+  stroke: red;
+}
 .description {
   white-space: nowrap;
   overflow: hidden;
@@ -108,4 +112,29 @@
     fill: black;
     stroke: black;
 }
+.faviriteBtn {
+  border: none;
+  background: none;
+}
 
+.btn_item {
+  cursor: pointer;
+  display: block;
+  margin-bottom: 20px;
+  border-radius: 200px;
+  padding: 16px 32px;
+  width: 145px;
+  height: 56px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  border: 1px solid rgba(71, 84, 103, 0.2);;
+   color: #101828;
+  transition: border 250ms ease-in 0s;
+}
+
+.btn_item:focus,
+.btn_item:hover {
+  border: 1px solid #e44848;
+}

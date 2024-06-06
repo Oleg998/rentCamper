@@ -1,3 +1,48 @@
-.titel {
-    color :blue
-}
+
+.home_page {
+    max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-size:auto;
+  background-position: center;
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  }
+  
+  header {
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  main {
+    margin-top: 20px;
+    flex-grow: 1;
+  }
+  
+  .featured_listings,
+  .how-it-works {
+    margin-bottom: 40px;
+  }
+  
+  footer {
+    
+    text-align: center;
+    margin-top: auto; 
+  }
+  

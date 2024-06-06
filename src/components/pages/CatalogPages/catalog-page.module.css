@@ -1,4 +1,5 @@
 .catalog_wraper {
+    margin-top: 40px;
     display: flex;
     width: 1314px;
     flex-direction: row;
