@@ -1,7 +1,62 @@
 .send_form {
-border: 1px solid rgba(16, 24, 40, 0.2);
-border-radius: 10px;
-padding: 24px;
-width: 448px;
-
+  border: 1px solid rgba(16, 24, 40, 0.2);
+  border-radius: 10px;
+  padding: 24px;
+  width: 448px;
 }
+
+.titel_form {
+  margin-bottom: 8px;
+}
+
+.subtitel_form {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #475467;
+  margin-bottom: 24px;
+}
+
+.input {
+  border: transparent;
+  border-radius: 10px;
+  width: 400px;
+  margin-bottom: 14px;
+
+  padding: 18px 18px 18px 44px;
+  background-color: #f7f7f7;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  color: #101828;
+}
+.input:focus {
+  outline: none;
+}
+.input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  color: rgba(16, 24, 40, 0.6);
+}
+.textarea {
+  border: none;
+  border-radius: 10px;
+  width: 400px;
+  margin-bottom: 24px;
+  padding: 18px 18px 18px 44px;
+  background-color: #f7f7f7;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  color: #101828;
+  resize: none;
+}
+.textarea::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  color: rgba(16, 24, 40, 0.6);}
+  
+  .textarea:focus {
+    outline: none;}

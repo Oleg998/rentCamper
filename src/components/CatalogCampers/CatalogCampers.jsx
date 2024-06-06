@@ -158,13 +158,18 @@ const CatalogCampers = () => {
   };
 
   const totalPages = Math.ceil(items.length / itemsPerPage);
-
+  
   return (
     <div className={css.item_container}>
       <Modal isOpen={modalActive} onClose={() => setModalActive(false)}>
         <ModalWindows currentItem={modalItem} />
       </Modal>
-      <ul>{renderItems()}</ul>
+      {items.length > 0 ? (
+  <ul>{renderItems()}</ul>
+) : (
+  <h2>No Camper for Your Filter</h2>
+)}
+      
       {totalPages > page && (
         <button onClick={LoadMore} type='button' className={css.btn_item}>Load more</button>
       )}

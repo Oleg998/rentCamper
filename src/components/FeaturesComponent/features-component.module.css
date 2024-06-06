@@ -35,3 +35,10 @@
     display: flex;
     justify-content: space-between;
 }
+
+.info_subtitel {
+font-weight: 500;
+font-size: 18px;
+line-height: 133%;
+color :#101828;
+}

@@ -5,6 +5,10 @@ import {useDispatch } from 'react-redux';
 import LocationFilter from "../Locationfilter/LocatinFilter"
 import { setDetails } from '../../redux/filter/filer-slice';
 import {FormBtn} from "../FormBtn/FormBtn";
+import { toast } from 'react-toastify';
+
+
+
 const FilterCampers = () => {
   const INITIAL_STATE = {
     equipment: [],
@@ -50,7 +54,9 @@ const FilterCampers = () => {
   };
 
   const handleSubmit = (e) => {
+   
     e.preventDefault();
+    if  (state.equipment.length === 0 && state.type === "" && state.transmission === ""){return (toast.error('Please select at least one filter ')) }
     dispatch(setDetails(state));
     setState({...INITIAL_STATE})
   };

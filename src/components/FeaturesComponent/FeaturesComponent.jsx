@@ -3,6 +3,7 @@ import css from '../CatalogCampers/catalog-campers.module.css';
 import sprite from '../../helpers/img/symbol-defs.svg';
 import { capitalizeFirstLetter } from '../../helpers/ToUpFistCase';
 import Form from '../../components/Form/Form';
+
 const FeaturesComponent = ({ features }) => {
   return (
     <div className={style.wrraper}>
@@ -161,8 +162,28 @@ const FeaturesComponent = ({ features }) => {
 
         <ul className={style.features_info}>
           <li className={style.features_info_item}>
-            <p>Form</p>
-            <p>{capitalizeFirstLetter(features.form)}</p>
+            <p className={style.info_subtitel}>Form</p>
+            <p className={style.info_subtitel} >{capitalizeFirstLetter(features.form)}</p>
+          </li>
+          <li className={style.features_info_item}>
+            <p className={style.info_subtitel}>Length</p>
+            <p className={style.info_subtitel}>{features.length}</p>
+          </li>
+          <li className={style.features_info_item}>
+            <p className={style.info_subtitel}>Width</p>
+            <p className={style.info_subtitel}>{features.width}</p>
+          </li>
+          <li className={style.features_info_item}>
+            <p className={style.info_subtitel}>Height</p>
+            <p className={style.info_subtitel}>{features.height}</p>
+          </li>
+          <li className={style.features_info_item}>
+            <p className={style.info_subtitel}>Tank</p>
+            <p className={style.info_subtitel}>{features.tank}</p>
+          </li>
+          <li className={style.features_info_item}>
+            <p className={style.info_subtitel}>Consumption</p>
+            <p className={style.info_subtitel}>{features.consumption}</p>
           </li>
         </ul>
       </div>
