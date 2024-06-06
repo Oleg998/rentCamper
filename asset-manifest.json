@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/rozetkaChetbox/static/css/main.ec3d46fd.css",
-    "main.js": "/rozetkaChetbox/static/js/main.83140d86.js",
-    "static/media/truck-camper-stop-action-g7775e5746_1280.jpg": "/rozetkaChetbox/static/media/truck-camper-stop-action-g7775e5746_1280.7eebbda220697550bc3b.jpg",
-    "static/media/symbol-defs.svg": "/rozetkaChetbox/static/media/symbol-defs.af6597062fe7b1e66a52df106832a55d.svg",
-    "index.html": "/rozetkaChetbox/index.html",
-    "main.ec3d46fd.css.map": "/rozetkaChetbox/static/css/main.ec3d46fd.css.map",
-    "main.83140d86.js.map": "/rozetkaChetbox/static/js/main.83140d86.js.map"
+    "main.css": "/rentCamper/static/css/main.ec3d46fd.css",
+    "main.js": "/rentCamper/static/js/main.a2fde52d.js",
+    "static/media/truck-camper-stop-action-g7775e5746_1280.jpg": "/rentCamper/static/media/truck-camper-stop-action-g7775e5746_1280.7eebbda220697550bc3b.jpg",
+    "static/media/symbol-defs.svg": "/rentCamper/static/media/symbol-defs.af6597062fe7b1e66a52df106832a55d.svg",
+    "index.html": "/rentCamper/index.html",
+    "main.ec3d46fd.css.map": "/rentCamper/static/css/main.ec3d46fd.css.map",
+    "main.a2fde52d.js.map": "/rentCamper/static/js/main.a2fde52d.js.map"
   },
   "entrypoints": [
     "static/css/main.ec3d46fd.css",
-    "static/js/main.83140d86.js"
+    "static/js/main.a2fde52d.js"
   ]
 }
