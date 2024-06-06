@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/rozetkaChetbox/static/css/main.8e75beaa.css",
-    "main.js": "/rozetkaChetbox/static/js/main.46dbee51.js",
+    "main.css": "/rozetkaChetbox/static/css/main.f622db87.css",
+    "main.js": "/rozetkaChetbox/static/js/main.0b036d32.js",
+    "static/media/truck-camper-stop-action-g7775e5746_1280.jpg": "/rozetkaChetbox/static/media/truck-camper-stop-action-g7775e5746_1280.7eebbda220697550bc3b.jpg",
     "static/media/symbol-defs.svg": "/rozetkaChetbox/static/media/symbol-defs.af6597062fe7b1e66a52df106832a55d.svg",
     "index.html": "/rozetkaChetbox/index.html",
-    "main.8e75beaa.css.map": "/rozetkaChetbox/static/css/main.8e75beaa.css.map",
-    "main.46dbee51.js.map": "/rozetkaChetbox/static/js/main.46dbee51.js.map"
+    "main.f622db87.css.map": "/rozetkaChetbox/static/css/main.f622db87.css.map",
+    "main.0b036d32.js.map": "/rozetkaChetbox/static/js/main.0b036d32.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e75beaa.css",
-    "static/js/main.46dbee51.js"
+    "static/css/main.f622db87.css",
+    "static/js/main.0b036d32.js"
   ]
 }
