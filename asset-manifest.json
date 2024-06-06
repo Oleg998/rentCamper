@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/rentCamper/static/css/main.ec3d46fd.css",
-    "main.js": "/rentCamper/static/js/main.a2fde52d.js",
+    "main.js": "/rentCamper/static/js/main.d8eb25e9.js",
     "static/media/truck-camper-stop-action-g7775e5746_1280.jpg": "/rentCamper/static/media/truck-camper-stop-action-g7775e5746_1280.7eebbda220697550bc3b.jpg",
-    "static/media/symbol-defs.svg": "/rentCamper/static/media/symbol-defs.af6597062fe7b1e66a52df106832a55d.svg",
+    "static/media/symbol-defs.svg": "/rentCamper/static/media/symbol-defs.439a2157663d8e017233842b1982fba5.svg",
     "index.html": "/rentCamper/index.html",
     "main.ec3d46fd.css.map": "/rentCamper/static/css/main.ec3d46fd.css.map",
-    "main.a2fde52d.js.map": "/rentCamper/static/js/main.a2fde52d.js.map"
+    "main.d8eb25e9.js.map": "/rentCamper/static/js/main.d8eb25e9.js.map"
   },
   "entrypoints": [
     "static/css/main.ec3d46fd.css",
-    "static/js/main.a2fde52d.js"
+    "static/js/main.d8eb25e9.js"
   ]
 }
